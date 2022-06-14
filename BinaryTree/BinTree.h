@@ -48,19 +48,19 @@ public:
     template<typename VST>
     void travPre (VST& visit) {             //先序便利
         if (_root) {
-            travPre(_root, visit);
+            travPre_I(_root, visit);
         }
     }
     template<typename VST>
     void travIn (VST& visit) {              //中序遍历
         if (_root) {
-            travIn(_root, visit);
+            travIn_I3(_root, visit);
         }
     }
     template<typename VST>
     void travPost (VST& visit) {            //后续遍历
         if (_root) {
-            travPost(_root, visit);
+            travPost_I(_root, visit);
         }
     }
     //比较器
@@ -171,7 +171,7 @@ template<typename T>          //二叉树的子树分离算法:将子树x从当�
 BinTree<T> *BinTree<T>::secede(BinNode<T> *x) {      //x要为二叉树中合法位置
     FromParentTo(*x) = nullptr;            //切断来自父节点的指针
     updateHeightAbove(x->parent);       //更新原树中所有祖先的高度
-    BinTree<T>* s = new BinTree<T>;        //新树以x为根
+    auto* s = new BinTree<T>;        //新树以x为根
     s->_root = x;
     x->parent = nullptr;
     s->_size = x->size();                  //更新规模,返回分离出来的子树
@@ -277,6 +277,63 @@ void travIn_I2 (BinNodePosi(T) x, VST& visit) { //二叉树中序遍历算法(�
         } else {
             break;                       //遍历完成
         }
+    }
+}
+
+template<typename T, typename VST>       //元素类型,操作器
+void travIn_I3 (BinNodePosi(T) x, VST& visit) { //二叉树中序遍历(迭代版3版)
+    bool backtrack = false;              //前一步是否刚从右子树回溯--省去栈,仅O(1)时间
+    while (true) {
+        if (!backtrack && HasLChild(*x)) {      //若有左子树且不是刚刚回溯,则
+            x = x->lc;                   //深入遍历左子树
+        } else {                         //否则--无左子树或刚刚回溯(相当于无左子树)
+            visit(x->data);              //访问该节点
+            if (HasRChild(*x)) {         //若其右子树为非空,则
+                x = x->rc;               //深入右子树遍历
+                backtrack = false;       //关闭回溯标志
+            } else {                     //若右子树空,则
+                if (!(x = x->succ())) {  //回溯(含抵达末节点时的退出返回)
+                    break;
+                }
+                backtrack = true;        //并设置回溯标志
+            }
+        }
+    }
+}
+
+
+
+/**
+ * @brief 以下几个函数为实现后序遍历的迭代版
+ */
+template<typename T>      //在以s栈顶节点为根的子树中,找到最高左侧可见叶节点
+static void gotoHLVFL (std::stack<BinNodePosi(T)>& s) { //沿途所遇见节点依次入栈
+    while (BinNodePosi(T) x = s.top()) {      //自顶向下,反复检查当前节点(即栈顶)
+        if (HasLChild(*x)) {                  //尽可能向左
+            if (HasRChild(*x)) {              //若有右孩子,优先入栈
+                s.push(x->rc);
+            }
+            s.push(x->lc);                    //然后才转至左孩子
+        } else {                              //实不得已
+            s.push(x->rc);                    //才向右
+        }
+    }
+    s.pop();                                  //返回之前,弹出栈顶的空节点
+}
+
+template<typename T, typename VST>
+void travPost_I (BinNodePosi(T) x, VST& visit) { //二叉树的后序遍历(迭代版)
+    std::stack<BinNodePosi(T)> s;             //辅助栈
+    if (x) {                                  //根节点入栈
+        s.push(x);
+    }
+    while (!s.empty()) {
+        if (s.top() != x->parent) {           //若栈顶非当前节点之父(则必为其右兄),此时需
+            gotoHLVFL(s);                  //在以其右兄为根之子树中,找到HLVFL(相当与递归深入其中)
+        }
+        x = s.top();                          //弹出栈顶(即前一节点之后继),并访问之
+        s.pop();
+        visit(x->data);
     }
 }
 

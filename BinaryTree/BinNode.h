@@ -6,6 +6,8 @@
 #define BINARYTREE_BINNODE_H
 
 #include <cstdlib>
+#include "../Queue/Queue.h"
+
 
 #define BinNodePosi(T) BinNode<T>*
 #define stature(p) ((p) ? (p)->height : -1)
@@ -31,8 +33,8 @@ struct BinNode{
     BinNodePosi(T) insertAsLC(T const&);    //作为当前节点的左孩子插入
     BinNodePosi(T) insertAsRC(T const&);    //作为当前节点的右孩子插入
     BinNodePosi(T) succ();                    //作为当前节点的直接后继
-//    template<typename VST>            //子树层次遍历
-//    void travLevel (VST&);
+    template<typename VST>            //子树层次遍历
+    void travLevel (VST&);
 //    template<typename VST>            //子树先序遍历
 //    void travPre (VST&);
 //    template<typename VST>            //子树中序遍历
@@ -120,7 +122,24 @@ BinNode<T> *BinNode<T>::succ() {
     return s;
 }
 
-
+/**
+ * @brief 以下函数是层次遍历(广度优先遍历)
+ */
+template<typename T> template<typename VST> //元素类型,操作器
+void BinNode<T>::travLevel(VST &visit) {    //二叉树层次遍历算法
+    Queue<BinNodePosi(T)> q;                //辅助队列
+    q.enqueue(this);                     //根节点入队
+    while (!q.empty()) {                    //在队列再次变空之前,反复迭代
+        BinNodePosi(T) x = q.dequeue();     //取出队首节点并访问之
+        visit(x->data);
+        if (HasLChild(*x)) {                //左孩子入队
+            q.enqueue(x->lc);
+        }
+        if (HasRChild(*x)) {                //右孩子入队
+            q.enqueue(x->rc);
+        }
+    }
+}
 
 
 
