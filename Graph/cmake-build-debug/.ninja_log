@@ -1,6 +1,0 @@
-# ninja log v5
-227	296	1655277457728895650	Graph	6be56f999b571f9c
-1	227	1655277457656895493	CMakeFiles/Graph.dir/main.cpp.o	a121fac69fe1a2e9
-1	342	1655436427800419512	CMakeFiles/Graph.dir/main.cpp.o	a121fac69fe1a2e9
-1	255	1655436515928927414	CMakeFiles/Graph.dir/Graph.cpp.o	e01c039ea3c2c204
-1	236	1655436603773430432	CMakeFiles/Graph.dir/Graph.cpp.o	e01c039ea3c2c204

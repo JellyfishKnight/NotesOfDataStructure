@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
 project(Stack)
 
-set(CMAKE_CXX_STANDARD 14)
+aux_source_directory(. DIR_STACK)
 
-add_executable(Stack main.cpp Stack.h)
+add_library(Stack ${DIR_STACK})

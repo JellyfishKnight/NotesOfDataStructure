@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
 project(Vector)
 
+aux_source_directory(. DIR_VECTOR)
 
-add_library()
+add_library(Vector ${DIR_VECTOR})

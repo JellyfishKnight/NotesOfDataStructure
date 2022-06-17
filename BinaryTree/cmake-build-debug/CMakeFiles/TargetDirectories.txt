@@ -1,3 +1,0 @@
-/home/wjy/Projects/DataStructure/BinaryTree/cmake-build-debug/CMakeFiles/BinaryTree.dir
-/home/wjy/Projects/DataStructure/BinaryTree/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/wjy/Projects/DataStructure/BinaryTree/cmake-build-debug/CMakeFiles/rebuild_cache.dir

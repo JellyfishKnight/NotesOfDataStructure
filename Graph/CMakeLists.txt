@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
 project(Graph)
 
-set(CMAKE_CXX_STANDARD 14)
+aux_source_directory(. DIR_GRAPH)
 
-add_executable(Graph main.cpp Graph.cpp Graph.h)
+add_library(Graph ${DIR_GRAPH})

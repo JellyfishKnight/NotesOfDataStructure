@@ -20,3 +20,12 @@
 <hr>
 
 **As the difficulties I have met in realize the _PFC encode_ by binary tree, I will put this aside.**
+
+<hr>
+
+**_Notice!!!_**
+
+:joy: _**Great Update**_ :joy: 
+
+>**Those data structures has been written to be compiled as static libraries which are provided to the
+main.cpp to use.** 

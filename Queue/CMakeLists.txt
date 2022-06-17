@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
 project(Queue)
 
-set(CMAKE_CXX_STANDARD 14)
+aux_source_directory(. DIR_QUEUE)
 
-add_executable(Queue main.cpp List.h Queue.h)
+add_library(Queue ${DIR_QUEUE})

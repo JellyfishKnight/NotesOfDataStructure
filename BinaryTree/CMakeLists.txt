@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
 project(BinaryTree)
 
-set(CMAKE_CXX_STANDARD 14)
+aux_source_directory(. DIR_BINARYTREE)
 
-add_executable(BinaryTree main.cpp BinNode.h BinTree.h)
+add_library(BinaryTree ${DIR_BINARYTREE})

@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
 project(List)
 
-set(CMAKE_CXX_STANDARD 14)
+aux_source_directory(. DIR_LIST)
 
-add_executable(List main.cpp)
+add_library(List ${DIR_LIST})

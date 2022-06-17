@@ -1,3 +1,0 @@
-/home/wjy/Projects/DataStructure/Stack/cmake-build-debug/CMakeFiles/Stack.dir
-/home/wjy/Projects/DataStructure/Stack/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/wjy/Projects/DataStructure/Stack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
