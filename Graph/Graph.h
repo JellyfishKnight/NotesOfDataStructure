@@ -8,7 +8,7 @@
 #include "../Stack/Stack.h"
 #include "../Vector/Vector.h"
 
-#define INT_MAX 2e10
+#define INT_MAX 2e8
 
 typedef enum {                        //顶点状态
     UNDISCOVERED, DISCOVERED, VISITED
@@ -214,6 +214,17 @@ public:
     }
 };
 
+template<typename Tv, typename Te> //针对Prim算法的顶点优先级更新器
+struct PrimPu {
+    virtual void operator() (Graph<Tv,Te>* g, int uk, int v) {
+        if (UNDISCOVERED == g->status(v)) {
+            if (g->priority(v) > g->weight(uk, v)) {
+                g->priority(v) = g->weight(uk, v);
+                g->parent(v) = uk;
+            }
+        }
+    }
+};
 
 
 #endif //GRAPH_GRAPH_H

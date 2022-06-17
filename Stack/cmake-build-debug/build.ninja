@@ -55,12 +55,6 @@ build CMakeFiles/Stack.dir/main.cpp.o: CXX_COMPILER__Stack_Debug /home/wjy/Proje
   OBJECT_DIR = CMakeFiles/Stack.dir
   OBJECT_FILE_DIR = CMakeFiles/Stack.dir
 
-build CMakeFiles/Stack.dir/Stack.cpp.o: CXX_COMPILER__Stack_Debug /home/wjy/Projects/DataStructure/Stack/Stack.cpp || cmake_object_order_depends_target_Stack
-  DEP_FILE = CMakeFiles/Stack.dir/Stack.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Stack.dir
-  OBJECT_FILE_DIR = CMakeFiles/Stack.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Stack
@@ -69,7 +63,7 @@ build CMakeFiles/Stack.dir/Stack.cpp.o: CXX_COMPILER__Stack_Debug /home/wjy/Proj
 #############################################
 # Link the executable Stack
 
-build Stack: CXX_EXECUTABLE_LINKER__Stack_Debug CMakeFiles/Stack.dir/main.cpp.o CMakeFiles/Stack.dir/Stack.cpp.o
+build Stack: CXX_EXECUTABLE_LINKER__Stack_Debug CMakeFiles/Stack.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Stack.dir
   POST_BUILD = :

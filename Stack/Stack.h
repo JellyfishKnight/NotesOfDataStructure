@@ -20,7 +20,7 @@ public:
     }
 };
 
-void convert_reverse(stack<char>& s, int n, int base) {            //Ê®½øÖÆÕıÕûÊınµ½base½øÖÆµÄ×ª»»
+void convert_reverse(Stack<char>& s, int n, int base) {            //Ê®½øÖÆÕıÕûÊınµ½base½øÖÆµÄ×ª»»
     static char digit[] = {                                //0 < n, 1 < base <= 16
             '0', '1', '2', '3', '4', '5',
             '6', '7', '8', '9', 'A',
@@ -32,7 +32,7 @@ void convert_reverse(stack<char>& s, int n, int base) {            //Ê®½øÖÆÕıÕûÊ
     }
 }                                      //ĞÂ½øÖÆÏÂÓÉ¸ßµ½µ×µÄ¸÷ÊıÎ»,×Ô¶¥ÏòÏÂ´æÓÚÕ»sÖĞ
 
-void convert_range(stack<char>& s, int n, int base) {               //Ê®½øÖÆ×ªÈÎÒâ½øÖÆ(µü´ú°æ)
+void convert_range(Stack<char>& s, int n, int base) {               //Ê®½øÖÆ×ªÈÎÒâ½øÖÆ(µü´ú°æ)
     static char digit[] = {                                //0 < n, 1 < base <= 16
             '0', '1', '2', '3', '4', '5',
             '6', '7', '8', '9', 'A',
