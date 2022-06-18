@@ -11,6 +11,7 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/List
         ${PROJECT_SOURCE_DIR}/Queue
         ${PROJECT_SOURCE_DIR}/Vector
+        ${PROJECT_SOURCE_DIR}/AVLTree
 )
 
 add_subdirectory(./BinaryTree)
@@ -20,8 +21,9 @@ add_subdirectory(./SearchTree)
 add_subdirectory(./List)
 add_subdirectory(./Queue)
 add_subdirectory(./Vector)
+add_subdirectory(./AVLTree)
 
-set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector)
+set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector AVLTree)
 
 add_executable(DataStructure ${TARGET} main.cpp)
 

@@ -45,6 +45,7 @@ public:                               //»ù±¾½Ó¿Ú:ÓÃvirtualĞŞÊÎ,Ç¿ÖÆÒªÇóËùÓĞÅÉÉúÀ
     virtual bool remove(const T& e);             //É¾³ı
 };
 
-
+template<typename T>
+static BinNodePosi(T) removeAt (BinNodePosi(T)& x, BinNodePosi(T)& hot);
 
 #endif //SEARCHTREE_SEARCHTREE_H
