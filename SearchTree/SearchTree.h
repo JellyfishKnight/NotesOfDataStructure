@@ -48,4 +48,6 @@ public:                               //»ù±¾½Ó¿Ú:ÓÃvirtualĞŞÊÎ,Ç¿ÖÆÒªÇóËùÓĞÅÉÉúÀ
 template<typename T>
 static BinNodePosi(T) removeAt (BinNodePosi(T)& x, BinNodePosi(T)& hot);
 
+template<typename T>
+static BinNodePosi(T)& searchIn(BinNodePosi(T)& v, const T& e, BinNodePosi(T)& hot);
 #endif //SEARCHTREE_SEARCHTREE_H

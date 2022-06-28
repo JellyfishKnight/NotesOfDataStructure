@@ -1,3 +1,0 @@
-/home/wjy/Projects/DataStructure/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/EightQueen_DFS.dir
-/home/wjy/Projects/DataStructure/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/wjy/Projects/DataStructure/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/rebuild_cache.dir

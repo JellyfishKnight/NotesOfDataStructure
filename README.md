@@ -19,7 +19,16 @@
 
 <hr>
 
-**As the difficulties I have met in realize the _PFC encode_ by binary tree, I will put this aside.**
+~~**As the difficulties I have met in realize the _PFC encode_ by binary tree, I will put this aside.**~~
+
+**PFC encode Tree will not be considered to realize anymore**
+
+
+<hr>
+
+**The difference between binary search tree and B- tree is most reflected on the way that the computer visit the storage.**
+
+**The first one will spend a lot more time on visit the outer storage, while the latter one is on the contrary.**
 
 <hr>
 

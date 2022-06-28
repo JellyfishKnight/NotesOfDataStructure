@@ -12,6 +12,8 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/Queue
         ${PROJECT_SOURCE_DIR}/Vector
         ${PROJECT_SOURCE_DIR}/AVLTree
+        ${PROJECT_SOURCE_DIR}/SplayTree
+        ${PROJECT_SOURCE_DIR}/BSubTree
 )
 
 add_subdirectory(./BinaryTree)
@@ -22,8 +24,10 @@ add_subdirectory(./List)
 add_subdirectory(./Queue)
 add_subdirectory(./Vector)
 add_subdirectory(./AVLTree)
+add_subdirectory(./SplayTree)
+add_subdirectory(./BSubTree)
 
-set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector AVLTree)
+set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector AVLTree SplayTree BSubTree)
 
 add_executable(DataStructure ${TARGET} main.cpp)
 
