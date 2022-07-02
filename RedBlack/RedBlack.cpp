@@ -62,3 +62,78 @@ void RedBlack<T>::solveDoubleRed(BinNode<T> *x) {
         solveDoubleRed(g);
     }
 }
+
+template<typename T>
+bool RedBlack<T>::remove(const T &e) {
+    BinNodePosi(T) &x = this->search(e);
+    if (!x) {
+        return false;
+    }
+    BinNodePosi(T) r = removeAt(x, this->_hot);
+    if (!(--this->_size)) {
+        return true;
+    }
+    if (!this->_hot) {
+        this->_root->color = RB_BLACK;
+        updateHeight(this->_root);
+        return true;
+    }
+    if (BlackHeightUpdated(*this->_hot)) {
+        return true;
+    }
+    if (IsRed(r)) {
+        r->color = RB_BLACK;
+        r->height++;
+        return true;
+    }
+    solveDoubleBlack(r);
+    return true;
+}
+
+template<typename T>
+void RedBlack<T>::solveDoubleBlack(BinNode<T> *r) {
+    BinNodePosi(T) p = r ? r->parent : this->_hot;
+    if (!p) {
+        return ;
+    }
+    BinNodePosi(T) s = (r == p->lc) ? p->rc : p->lc;
+    if (IsBlack(s)) {
+        BinNodePosi(T) t = nullptr;
+        if (IsRed(s->rc)) {
+            t = s->rc;
+        }
+        if (IsRed(s->lc)) {
+            t = s->lc;
+        }
+        if (t) {
+            RBCOLOR oldColor = p->color;
+            BinNodePosi(T) b = FromParentTo(*p) = this->rotateAt(t);
+            if (HasLChild(*b)) {
+                b->lc->color = RB_BLACK;
+                updateHeight(b->lc);
+            }
+            if (HasRChild(*b)) {
+                b->rc->color = RB_BLACK;
+                updateHeight(b->rc);
+            }
+            b->color = oldColor;
+            updateHeight(b);
+        } else {
+            s->color = RB_RED;
+            s->height--;
+            if (IsRed(p)) {
+                p->color = RB_BLACK;
+            } else {
+                p->height--;
+                solveDoubleBlack(p);
+            }
+        }
+    } else {
+        s->color = RB_BLACK;
+        p->color = RB_RED;
+        BinNodePosi(T) t = IsLChild(*s) ? s->lc : s->rc;
+        this->_hot = p;
+        FromParentTo(*p) = this->rotateAt(t);
+        solveDoubleBlack(r);
+    }
+}

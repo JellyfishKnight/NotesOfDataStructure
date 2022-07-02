@@ -25,14 +25,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="413ac90a-7db4-4979-a8d7-51212af7bfc9" name="变更" comment="SearchTree is added and the project's Structure is improved">
-      <change afterPath="$PROJECT_DIR$/RedBlack/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedBlack/RedBlack.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RedBlack/RedBlack.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BinaryTree/BinNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/BinNode.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-e74b58cbb1269b7ca55b.json" beforeDir="false" />
+    <list default="true" id="413ac90a-7db4-4979-a8d7-51212af7bfc9" name="变更" comment="Red-Black Tree is added, but won't be finished in recent days">
+      <change beforePath="$PROJECT_DIR$/RedBlack/RedBlack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RedBlack/RedBlack.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,7 @@
       <workItem from="1656394186026" duration="12459000" />
       <workItem from="1656416043268" duration="63000" />
       <workItem from="1656418059197" duration="5200000" />
-      <workItem from="1656741359249" duration="3835000" />
+      <workItem from="1656741359249" duration="5199000" />
     </task>
     <task id="LOCAL-00001" summary="SearchTree is added and the project's Structure is improved">
       <created>1655462969059</created>
@@ -189,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655462969059</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Red-Black Tree is added, but won't be finished in recent days">
+      <created>1656745720530</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656745720530</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +210,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SearchTree is added and the project's Structure is improved" />
-    <option name="LAST_COMMIT_MESSAGE" value="SearchTree is added and the project's Structure is improved" />
+    <MESSAGE value="Red-Black Tree is added, but won't be finished in recent days" />
+    <option name="LAST_COMMIT_MESSAGE" value="Red-Black Tree is added, but won't be finished in recent days" />
   </component>
 </project>
