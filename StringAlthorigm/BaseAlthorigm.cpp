@@ -6,7 +6,7 @@
 
 
 //±©¡¶À„∑®
-int match(char *p, char *t) {
+int baseMatch(char *p, char *t) {
     size_t n = strlen(t), i = 0;
     size_t m = strlen(p), j;
     for (i = 0; i < n - m + 1; i++) {

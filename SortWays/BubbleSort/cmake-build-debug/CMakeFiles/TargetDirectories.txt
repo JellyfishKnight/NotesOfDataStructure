@@ -1,3 +1,0 @@
-/home/wjy/Projects/DataStructure/SortWays/BubbleSort/cmake-build-debug/CMakeFiles/BubbleSort.dir
-/home/wjy/Projects/DataStructure/SortWays/BubbleSort/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/wjy/Projects/DataStructure/SortWays/BubbleSort/cmake-build-debug/CMakeFiles/rebuild_cache.dir

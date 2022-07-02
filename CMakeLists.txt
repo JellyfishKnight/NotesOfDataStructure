@@ -16,6 +16,7 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/BSubTree
         ${PROJECT_SOURCE_DIR}/RedBlack
         ${PROJECT_SOURCE_DIR}/StringAlthorigm
+        ${PROJECT_SOURCE_DIR}/SortWays
 )
 
 add_subdirectory(./BinaryTree)
@@ -30,8 +31,9 @@ add_subdirectory(./SplayTree)
 add_subdirectory(./BSubTree)
 add_subdirectory(./RedBlack)
 add_subdirectory(./StringAlthorigm)
+add_subdirectory(./SortWays)
 
-set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector AVLTree SplayTree BSubTree)
+set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector AVLTree SplayTree BSubTree RedBlack StringAlthorigm SortWays)
 
 add_executable(DataStructure ${TARGET} main.cpp)
 

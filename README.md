@@ -40,3 +40,12 @@
 main.cpp to use.** 
 > 
 > **And because I can't really understand the theory of Red-Black tree, I give up the thought to develop the dirctionary, and start to learn the althorigm of string.**
+
+
+<hr>
+<hr>
+
+_**写在最后:**_
+>不得不说数据结构很枯燥,但是用心去对待它你还是会学到很多有趣的思想,鉴于一些本人的能力原因,部分的数据结构并没有去完成,算是一点小遗憾,总之呢,数据结构的学习就告一段落了
+> 这段时间学了很多,还是很开心的,在最后的部分我完善了快速排序和串的一些算法.所有的代码参考来源是清华大学的数据结构教材,c++版.虽然我学的很烂,但是希望你看到这个仓库的时候他能帮到你什么.
+> 就这样吧,应该开启新的学习了.

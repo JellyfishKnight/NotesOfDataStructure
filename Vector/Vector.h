@@ -25,7 +25,7 @@ protected:
     void merge(Rank lo, Rank mi, Rank hi);                                    //归并算法
     void mergeSort(Rank lo, Rank hi);                                //归并排序算法
     Rank partition(Rank lo, Rank hi);                //轴点构造法
-    void quickSort(Rank lo, Rank hi);                //快速排序算法
+    //快速排序算法
     void heapSort(Rank lo, Rank hi);                 //堆排序算法
 public:
     //构造函数
@@ -64,7 +64,7 @@ public:
     }
     Rank search(T const& e, Rank lo, Rank hi) const; //有序向量区间查找
     //只写访问接口
-    T& operator[] (Rank r) const;                    //重载下表运算符,可以类似与数组形式引用各元素
+    const T& operator[] (Rank r) const;                    //重载下表运算符,可以类似与数组形式引用各元素
     Vector<T>& operator= (Vector<T> const&);         //重载赋值运算符,以便克隆向量
     T remove(Rank r);                                //删除秩为r的元素
     int remove(Rank lo, Rank hi);                    //删除区间[lo,hi]的元素并返回删除元素的个数
@@ -86,6 +86,8 @@ public:
     void traverse(void(*) (T&));                     //遍历(使用函数指针,只读或局部性修改)
     template<typename VST>                           //遍历(使用函数对象,全局性修改)
     void traverse(VST&);
+
+    void quickSort(Rank lo, Rank hi);
 };
 
 #endif //VECTOR_VECTOR_H

@@ -1,3 +1,0 @@
-/home/wjy/Projects/DataStructure/SortWays/MergeSort/cmake-build-debug/CMakeFiles/MergeSort.dir
-/home/wjy/Projects/DataStructure/SortWays/MergeSort/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/wjy/Projects/DataStructure/SortWays/MergeSort/cmake-build-debug/CMakeFiles/rebuild_cache.dir

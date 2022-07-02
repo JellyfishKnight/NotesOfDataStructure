@@ -29,19 +29,3 @@ void mergeSort(int *a, int lowerBound, int upperBound) {
     mergeSort(a, middle, upperBound);
     mergeSort(a, lowerBound, middle, upperBound);
 }
-
-int main() {
-    int n;
-    cin >> n;
-    int a[n];
-    for (auto &item: a) {
-        cin >> item;
-    }
-
-    mergeSort(a, 0, n);
-
-    for (const auto &item: a) {
-        cout << item << " ";
-    }
-    return 0;
-}

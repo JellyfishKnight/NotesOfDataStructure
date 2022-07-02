@@ -3,16 +3,34 @@
 //
 #include "cstring"
 
-int *buildNext(char *p) {            //构造模式串p的next表
-    size_t m = strlen(p), j = 0;  //"主"串指针
-    int *n = new int[m];             //next表
-    int t = n[0]  -1;                //模式串指针
+
+/*未改进版*/
+//int *buildNext(char *p) {            //构造模式串p的next表
+//    size_t m = strlen(p), j = 0;  //"主"串指针
+//    int *n = new int[m];             //next表
+//    int t = n[0]  -1;                //模式串指针
+//    while (j < m - 1) {
+//        if (t < 0 || p[j] == p[t]) { //匹配
+//            j++;
+//            t++;
+//            n[j] = t;
+//        } else {                     //失配
+//            t = n[t];
+//        }
+//    }
+//    return n;
+//}
+/*改进版*/
+int *buildNext(char *p) {
+    size_t m = strlen(p), j = 0;
+    int *n = new int[m];
+    int t = n[0] = -1;
     while (j < m - 1) {
-        if (t < 0 || p[j] == p[t]) { //匹配
+        if (t < 0 || p[j] == n[t]) {
             j++;
             t++;
-            n[j] = t;
-        } else {                     //失配
+            n[j] = (p[j] != p[t]) ? t : n[t]; //注意此句与未改进版的差别
+        } else {
             t = n[t];
         }
     }
@@ -20,7 +38,7 @@ int *buildNext(char *p) {            //构造模式串p的next表
 }
 
 
-int match(char *p, char *t) {           //KMP算法
+int kmpMatch(char *p, char *t) {           //KMP算法
     int *next = buildNext(p);           //构造next表
     int n = (int) strlen(t), i = 0;  //文本串指针
     int m = (int) strlen(p), j = 0;  //模式串指针
