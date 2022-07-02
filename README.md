@@ -38,3 +38,5 @@
 
 >**Those data structures has been written to be compiled as static libraries which are provided to the
 main.cpp to use.** 
+> 
+> **And because I can't really understand the theory of Red-Black tree, I give up the thought to develop the dirctionary, and start to learn the althorigm of string.**
