@@ -16,6 +16,7 @@
       <config projectName="DataStructure" targetName="SplayTree" />
       <config projectName="DataStructure" targetName="Graph" />
       <config projectName="DataStructure" targetName="Stack" />
+      <config projectName="DataStructure" targetName="RedBlack" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -25,133 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="413ac90a-7db4-4979-a8d7-51212af7bfc9" name="变更" comment="SearchTree is added and the project's Structure is improved">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BSubTree/BSubTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BSubTree/BSubTree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplayTree/SplayTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SplayTree/SplayTree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RedBlack/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RedBlack/RedBlack.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RedBlack/RedBlack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BinaryTree/BinNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/BinaryTree/BinNode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/.idea/PFCEncoding_BT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/PFC.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/PFC.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/BSubTree/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" afterPath="$PROJECT_DIR$/SplayTree/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/cache-v2-654ce02d732e3806177f.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-e74b58cbb1269b7ca55b.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0cf587fc2423cc43cb84.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-e668223613b855e0d967.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/index-2022-06-14T14-31-22-0159.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/target-PFCEncoding_BT-Debug-92c855800e8eb35623e7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-1a378011e4175c8a1b9a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFCEncoding_BT/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchTree/SearchTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/SearchTree/SearchTree.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/.idea/EightQueen_DFS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/cache-v2-f8300456eb1fbd4e08c2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-3183d5ff00e46dc12a70.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c550b52f1e738aa5ea67.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/index-2022-06-10T02-58-11-0718.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/target-EightQueen_DFS-Debug-f05aa8269da6f140464a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-1a378011e4175c8a1b9a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/EightQueen_DFS.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/EightQueen_DFS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/EightQueen_DFS/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/.idea/MazeSolve.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/cache-v2-7614ddf350dd0e41775f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-bd6c3c1cb4fcb463752d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-d3d3994064c19c8e7da2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/index-2022-06-12T03-29-12-0704.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/target-MazeSolve-Debug-384e2bd8614029297755.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-1a378011e4175c8a1b9a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TemplatesForAlthorigm/MazeSolve/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeSystem.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-e74b58cbb1269b7ca55b.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +56,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2022" />
@@ -188,24 +72,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/wjy/Projects/TEST_2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/wjy/Projects/TEST_2",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="CMake 应用程序.DataStructure">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AVLTree" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="AVLTree" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -241,6 +121,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedBlack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="RedBlack" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchTree" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DataStructure" TARGET_NAME="SearchTree" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -261,6 +146,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake 应用程序.DataStructure" />
       <item itemvalue="CMake 应用程序.AVLTree" />
@@ -269,6 +159,7 @@
       <item itemvalue="CMake 应用程序.Graph" />
       <item itemvalue="CMake 应用程序.List" />
       <item itemvalue="CMake 应用程序.Queue" />
+      <item itemvalue="CMake 应用程序.RedBlack" />
       <item itemvalue="CMake 应用程序.SearchTree" />
       <item itemvalue="CMake 应用程序.SplayTree" />
       <item itemvalue="CMake 应用程序.Stack" />
@@ -288,7 +179,8 @@
       <workItem from="1655699768293" duration="13000" />
       <workItem from="1656394186026" duration="12459000" />
       <workItem from="1656416043268" duration="63000" />
-      <workItem from="1656418059197" duration="5055000" />
+      <workItem from="1656418059197" duration="5200000" />
+      <workItem from="1656741359249" duration="3835000" />
     </task>
     <task id="LOCAL-00001" summary="SearchTree is added and the project's Structure is improved">
       <created>1655462969059</created>

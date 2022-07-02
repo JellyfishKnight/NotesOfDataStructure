@@ -14,6 +14,7 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/AVLTree
         ${PROJECT_SOURCE_DIR}/SplayTree
         ${PROJECT_SOURCE_DIR}/BSubTree
+        ${PROJECT_SOURCE_DIR}/RedBlack
 )
 
 add_subdirectory(./BinaryTree)
@@ -26,6 +27,7 @@ add_subdirectory(./Vector)
 add_subdirectory(./AVLTree)
 add_subdirectory(./SplayTree)
 add_subdirectory(./BSubTree)
+add_subdirectory(./RedBlack)
 
 set(TARGET BinaryTree Stack Graph SearchTree List Queue Vector AVLTree SplayTree BSubTree)
 
